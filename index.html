@@ -10,8 +10,40 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo" />
+      </div>
+      <div class="score">
+        <div class="score__title">Score</div>
+        <div class="score__points points">12</div>
+      </div>
+    </div>
+    <div class="game">
+      <div class="pattern">
+        <img
+          class="pattern__img"
+          src="images/bg-triangle.svg"
+          alt="Pattern triangle"
+        />
+        <div class="option paper">
+          <img src="images/icon-paper.svg" alt="Paper" />
+        </div>
+        <div class="option scissors">
+          <img src="images/icon-scissors.svg" alt="Scissors" />
+        </div>
+        <div class="option rock">
+          <img src="images/icon-rock.svg" alt="Rock" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

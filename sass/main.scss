@@ -1,0 +1,122 @@
+$radial-gradient: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(217, 16%, 45%);
+$rock-light: hsl(349, 71%, 52%);
+$rock-dark: hsl(349, 70%, 56%);
+$paper-light: hsl(230, 89%, 62%);
+$paper-dark: hsl(230, 89%, 65%);
+$scissors-light: hsl(39, 89%, 49%);
+$scissors-dark: hsl(40, 84%, 53%);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: $radial-gradient;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.header {
+  border: 3px solid $header-outline;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 3.5rem;
+  padding: 2rem;
+
+  .logo {
+    width: 10rem;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .score {
+    background-color: white;
+    border-radius: 5px;
+    color: $score-text;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: -1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    &__title {
+      text-transform: uppercase;
+    }
+
+    &__points {
+      font-size: 4rem;
+    }
+  }
+}
+
+.game {
+  text-align: center;
+  position: relative;
+  top: 10rem;
+
+  .option {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+
+    &:hover {
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+  }
+
+  .paper {
+    box-shadow: 0 0 0 1.5rem $paper-dark, 0 0 0 1.5rem $paper-light,
+      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    top: -5rem;
+    left: -5rem;
+  }
+  .scissors {
+    box-shadow: 0 0 0 1.5rem $scissors-dark, 0 0 0 1.5rem $scissors-light,
+      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    top: -5rem;
+    right: -5rem;
+  }
+  .rock {
+    box-shadow: 0 0 0 1.5rem $rock-dark, 0 0 0 1.5rem $rock-light,
+      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.pattern {
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
