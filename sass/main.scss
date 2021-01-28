@@ -30,16 +30,26 @@ body {
 
 .header {
   border: 3px solid $header-outline;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 3rem 3.5rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
+
+  @media only screen and (min-width: 768px) {
+    border-radius: 15px;
+    width: 65rem;
+    margin: 3rem auto;
+  }
 
   .logo {
-    width: 10rem;
+    width: 8rem;
     height: auto;
+
+    @media only screen and (min-width: 768px) {
+      width: 15rem;
+    }
 
     img {
       width: 100%;
@@ -52,17 +62,31 @@ body {
     border-radius: 5px;
     color: $score-text;
     font-weight: 700;
-    letter-spacing: 1px;
     margin-right: -1rem;
     padding: 1rem 2rem;
     text-align: center;
 
+    @media only screen and (min-width: 768px) {
+      border-radius: 10px;
+      padding: 1.5rem 4.5rem;
+      margin-right: 0;
+    }
+
     &__title {
       text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     &__points {
       font-size: 4rem;
+      @media only screen and (min-width: 768px) {
+        font-size: 5.5rem;
+      }
     }
   }
 }
@@ -82,6 +106,16 @@ body {
     height: 10rem;
     position: absolute;
 
+    @media only screen and (min-width: 768px) {
+      width: 15rem;
+      height: 15rem;
+
+      & > img {
+        width: 6.5rem;
+        height: auto;
+      }
+    }
+
     &:hover {
       transform: translateY(-3px);
       cursor: pointer;
@@ -89,20 +123,20 @@ body {
   }
 
   .paper {
-    box-shadow: 0 0 0 1.5rem $paper-dark, 0 0 0 1.5rem $paper-light,
-      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2rem $paper-dark, 0 0 0 2rem $paper-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0);
     top: -5rem;
     left: -5rem;
   }
   .scissors {
-    box-shadow: 0 0 0 1.5rem $scissors-dark, 0 0 0 1.5rem $scissors-light,
-      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2rem $scissors-dark, 0 0 0 2rem $scissors-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2);
     top: -5rem;
     right: -5rem;
   }
   .rock {
-    box-shadow: 0 0 0 1.5rem $rock-dark, 0 0 0 1.5rem $rock-light,
-      inset 0 5px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2rem $rock-dark, 0 0 0 2rem $rock-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2);
     bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
@@ -111,12 +145,49 @@ body {
 
 .pattern {
   margin: auto;
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    width: 30rem;
+    height: 30rem;
+  }
 
   &__img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  margin: 2rem 0;
+  position: relative;
+  top: 25rem;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    top: 8rem;
+    padding: 4rem 4rem;
+    padding-bottom: 6rem;
+    text-align: right;
+  }
+
+  .rules {
+    background-color: transparent;
+    border: 1.5px solid $header-outline;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) {
+      padding: 1rem 3.5rem;
+    }
   }
 }
