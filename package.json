@@ -18,5 +18,6 @@
   "homepage": "https://github.com/nina1012/paper-rock-scissors#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,47 @@
+.option {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    pointer-events: all;
+    transform-origin: left;
+
+    @media only screen and (min-width: 768px) {
+      width: 15rem;
+      height: 15rem;
+
+      & > img {
+        width: 6.5rem;
+        height: auto;
+        pointer-events: none;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      cursor: pointer;
+    }
+  }
+
+  .paper {
+    box-shadow: 0 0 0 2rem $paper-dark, 0 0 0 2rem $paper-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0);
+    top: -5rem;
+    left: -5rem;
+  }
+  .scissors {
+    box-shadow: 0 0 0 2rem $scissors-dark, 0 0 0 2rem $scissors-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2);
+    top: -5rem;
+    right: -5rem;
+  }
+  .rock {
+    box-shadow: 0 0 0 2rem $rock-dark, 0 0 0 2rem $rock-light,
+      inset 0 7px 2px 0 rgba(0, 0, 0, 0.2);
+    bottom: -3rem;
+    left: 25%;
+  }

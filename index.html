@@ -14,7 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="app.js"></script>
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
@@ -24,7 +26,7 @@
       </div>
       <div class="score">
         <div class="score__title">Score</div>
-        <div class="score__points points">12</div>
+        <div class="score__points points"></div>
       </div>
     </div>
     <div class="game">
@@ -34,13 +36,13 @@
           src="images/bg-triangle.svg"
           alt="Pattern triangle"
         />
-        <div class="option paper">
+        <div class="option paper" data-select="paper">
           <img src="images/icon-paper.svg" alt="Paper" />
         </div>
-        <div class="option scissors">
+        <div class="option scissors" data-select="scissors">
           <img src="images/icon-scissors.svg" alt="Scissors" />
         </div>
-        <div class="option rock">
+        <div class="option rock" data-select="rock">
           <img src="images/icon-rock.svg" alt="Rock" />
         </div>
       </div>
