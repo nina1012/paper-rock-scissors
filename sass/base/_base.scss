@@ -26,6 +26,7 @@ body {
   background-image: $radial-gradient;
   box-sizing: border-box;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .score {
@@ -61,45 +62,30 @@ body {
   }
 }
 
-.game {
+.game-section {
   text-align: center;
   position: relative;
   top: 10rem;
-
   pointer-events: none;
-}
-
-.pattern {
+  transition: 0.5s;
   margin: auto;
-  width: 18rem;
-  height: 18rem;
-  position: relative;
+  width: 20rem;
+  height: auto;
 
   @media only screen and (min-width: 768px) {
     width: 30rem;
-    height: 30rem;
+    height: 35rem;
   }
 
-  &__img {
+  .game {
+    transform: translate(-300rem);
+    display: none;
     width: 100%;
-    height: 100%;
-  }
-}
+    height: auto;
 
-@keyframes slideToLeft {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-25%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  75% {
-    transform: translateX(-75%);
-  }
-  100% {
-    transform: translateX(-100%);
+    .pattern__img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

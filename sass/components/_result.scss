@@ -1,0 +1,20 @@
+.result {
+  display: flex;
+  flex-wrap: wrap;
+
+  .message {
+    order: 1;
+    color: white;
+  }
+
+  .player-choice,
+  .house-choice {
+    border: 1px solid red;
+
+    &__header {
+      font-size: 1.5rem;
+      color: white;
+      order: 1;
+    }
+  }
+}
