@@ -1,0 +1,11 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == bigger-screen {
+    @media only screen and(min-width: 650px) {
+      @content;
+    } //600px
+  }
+}
+
+@mixin hide {
+  display: none;
+}
