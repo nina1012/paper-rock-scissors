@@ -41,130 +41,7 @@ html {
 body {
   background-image: radial-gradient(#1f3756, #141539);
   box-sizing: border-box;
-  height: 100vh;
-  overflow-x: hidden; }
-
-.score {
-  background-color: white;
-  border-radius: 5px;
-  color: #2a46c0;
-  font-weight: 700;
-  margin-right: -1rem;
-  padding: 1rem 2rem;
-  text-align: center; }
-  @media only screen and (min-width: 768px) {
-    .score {
-      border-radius: 10px;
-      padding: 1.5rem 4.5rem;
-      margin-right: 0; } }
-  .score__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px; }
-    @media only screen and (min-width: 768px) {
-      .score__title {
-        font-size: 1.5rem; } }
-  .score__points {
-    font-size: 4rem; }
-    @media only screen and (min-width: 768px) {
-      .score__points {
-        font-size: 5.5rem; } }
-
-.game-section {
-  text-align: center;
-  position: relative;
-  top: 10rem;
-  pointer-events: none;
-  transition: 0.5s;
-  margin: auto;
-  width: 20rem;
-  height: auto; }
-  @media only screen and (min-width: 768px) {
-    .game-section {
-      width: 30rem;
-      height: 35rem; } }
-  .game-section .game {
-    transform: translate(-300rem);
-    display: none;
-    width: 100%;
-    height: auto; }
-    .game-section .game .pattern__img {
-      width: 100%;
-      height: 100%; }
-
-.btn {
-  background-color: transparent;
-  border: 1.5px solid #606e85;
-  border-radius: 10px;
-  color: white;
-  font-size: 1.7rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 1rem 3rem;
-  text-transform: uppercase;
-  transition: 0.2s background-color; }
-  .btn:hover {
-    background-color: white;
-    color: #3b4363;
-    cursor: pointer; }
-  @media only screen and (min-width: 768px) {
-    .btn {
-      padding: 1rem 3.5rem; } }
-
-.option {
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  pointer-events: all;
-  transform-origin: center;
-  transition: 0.3s ease-in; }
-  .option > img {
-    pointer-events: none; }
-  @media only screen and (min-width: 768px) {
-    .option {
-      width: 15rem;
-      height: 15rem; }
-      .option > img {
-        width: 6.5rem;
-        height: auto; } }
-  .option:hover {
-    transform: translateY(-3px);
-    cursor: pointer; }
-
-.paper {
-  box-shadow: 0 0 2px 2rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #253cad;
-  top: -5rem;
-  left: -5rem; }
-
-.scissors {
-  box-shadow: 0 0 0 2rem #eca922, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), 0 1rem 0 2rem #b1801b;
-  top: -5rem;
-  right: -5rem; }
-
-.rock {
-  box-shadow: 0 0 0 2rem #dd405d, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), 0 1rem 0 2rem #af354b;
-  bottom: 3rem;
-  left: 25%; }
-
-.result {
-  display: flex;
-  flex-wrap: wrap; }
-  .result .message {
-    order: 1;
-    color: white; }
-  .result .player-choice,
-  .result .house-choice {
-    border: 1px solid red; }
-    .result .player-choice__header,
-    .result .house-choice__header {
-      font-size: 1.5rem;
-      color: white;
-      order: 1; }
+  height: 100vh; }
 
 .container {
   width: 100%;
@@ -180,15 +57,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  margin: 3rem 3.5rem;
-  padding: 1rem 2rem;
-  position: relative; }
-  @media only screen and (min-width: 768px) {
-=======
   padding: 1rem 2rem; }
   @media only screen and (min-width: 650px) {
->>>>>>> test
     .header {
       border-radius: 15px;
       width: 65rem;
@@ -208,20 +78,14 @@ body {
   height: 3rem;
   margin: 2rem 0;
   position: relative;
-<<<<<<< HEAD
-  top: 15rem;
-=======
->>>>>>> test
   text-align: center; }
   @media only screen and (min-width: 650px) {
     .footer {
-      top: 15rem;
+      top: 8rem;
       padding: 4rem 4rem;
       padding-bottom: 6rem;
       text-align: right; } }
 
-<<<<<<< HEAD
-=======
 .btn {
   background-color: transparent;
   border: 1.5px solid #606e85;
@@ -273,25 +137,10 @@ body {
   .game-container .result {
     display: none; }
 
->>>>>>> test
 .modal {
   background-color: white;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  transform: scale(0);
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-  @media only screen and (min-width: 768px) {
-=======
   justify-content: space-around;
   align-items: center;
   position: absolute;
@@ -302,38 +151,10 @@ body {
   transform: scale(0);
   transition: 0.2s ease-in; }
   @media only screen and (min-width: 650px) {
->>>>>>> test
     .modal {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-<<<<<<< HEAD
-      border-radius: 10px;
-      padding: 3rem;
-      top: 50%;
-      margin: 0 auto;
-      transform: scale(0);
-      width: 40rem;
-      height: 45rem; } }
-  .modal__title {
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase; }
-  @media only screen and (min-width: 768px) {
-    .modal__img {
-      order: 1;
-      margin: 0 auto; } }
-  .modal .close {
-    display: inline-block;
-    padding: 2rem; }
-    .modal .close:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      cursor: pointer; }
-
-.show {
-  transform: scale(1); }
-=======
       margin: auto;
       border-radius: 1rem;
       padding: 4rem;
@@ -536,4 +357,3 @@ body {
     @media only screen and (min-width: 650px) {
       .score__points {
         font-size: 5.5rem; } }
->>>>>>> test

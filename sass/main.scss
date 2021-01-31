@@ -1,22 +1,11 @@
-<<<<<<< HEAD
+@import 'abstract/animations';
+@import 'abstract/functions';
+@import 'abstract/mixins';
+@import 'abstract/variables';
 @import 'base/base';
-@import 'components/button';
+@import 'base/classes';
+@import 'components/game-container';
+@import 'components/modal';
 @import 'components/option';
 @import 'components/result';
-@import 'layout/layout';
-=======
-
-
-@import 'abstract/animations';
-@import "abstract/functions";
-@import 'abstract/mixins';
-@import "abstract/variables";
-@import "base/base";
-@import "base/classes";
-@import "components/game-container";
-@import "components/modal";
-@import "components/option";
-@import "components/result";
-@import "components/score";
-
->>>>>>> test
+@import 'components/score';
