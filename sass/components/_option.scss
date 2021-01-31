@@ -1,9 +1,16 @@
+<<<<<<< HEAD
+=======
+.game .option {
+  position: absolute;
+}
+>>>>>>> test
 .option {
   background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   width: 10rem;
   height: 10rem;
   position: absolute;
@@ -18,6 +25,14 @@
   @media only screen and (min-width: 768px) {
     width: 15rem;
     height: 15rem;
+=======
+  width: $option-min;
+  height: $option-min;
+
+  @include respond(bigger-screen) {
+    width: $option-max;
+    height: $option-max;
+>>>>>>> test
 
     & > img {
       width: 6.5rem;
@@ -30,6 +45,7 @@
     cursor: pointer;
   }
 }
+<<<<<<< HEAD
 
 .paper {
   box-shadow: 0 0 2px 2rem $paper-dark, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2),
@@ -49,4 +65,52 @@
     0 1rem 0 2rem #af354b;
   bottom: 3rem;
   left: 25%;
+=======
+.paper {
+  box-shadow: color($paper-1, $paper-2, 2rem);
+  top: -5rem;
+  left: -5rem;
+
+  @include respond(bigger-screen) {
+    box-shadow: color($paper-1, $paper-2, 2rem);
+  }
+}
+.scissors {
+  box-shadow: color($scissors-1, $scissors-2, 2rem);
+  top: -5rem;
+  right: -5rem;
+
+  @include respond(bigger-screen) {
+    box-shadow: color($scissors-1, $scissors-2, 2rem);
+  }
+}
+.rock {
+  box-shadow: color($rock-1, $rock-2, 2rem);
+  bottom: -3rem;
+  left: 4.5rem;
+
+  @include respond(bigger-screen) {
+    left: 7rem;
+    box-shadow: color($rock-1, $rock-2, 2rem);
+  }
+}
+
+.player,
+.house {
+  .option {
+    width: $option-min;
+    height: $option-min;
+    box-shadow: color($paper-1, $paper-2, 1rem, 5px);
+    @include respond(bigger-screen) {
+      width: $option-max;
+      height: $option-max;
+      box-shadow: color($paper-1, $paper-2, 2rem);
+    }
+  }
+}
+
+.triangle-img {
+  width: 100%;
+  height: 100%;
+>>>>>>> test
 }
