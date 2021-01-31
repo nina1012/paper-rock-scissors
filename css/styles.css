@@ -41,7 +41,8 @@ html {
 body {
   background-image: radial-gradient(#1f3756, #141539);
   box-sizing: border-box;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .container {
   width: 100%;
@@ -195,6 +196,8 @@ body {
   align-items: center;
   width: 10rem;
   height: 10rem; }
+  .option > img {
+    pointer-events: none; }
   @media only screen and (min-width: 650px) {
     .option {
       width: 15rem;
@@ -207,41 +210,39 @@ body {
     cursor: pointer; }
 
 .paper {
-  box-shadow: 0 0 0 2rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #3b55d8;
+  box-shadow: 0 0 0 1rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 1rem #3b55d8;
   top: -5rem;
   left: -5rem; }
   @media only screen and (min-width: 650px) {
     .paper {
-      box-shadow: 0 0 0 2rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #3b55d8; } }
+      box-shadow: 0 0 0 2rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #3b55d8; } }
 
 .scissors {
-  box-shadow: 0 0 0 2rem #eca922, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #d18c0a;
+  box-shadow: 0 0 0 1rem #eca922, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 1rem #d18c0a;
   top: -5rem;
   right: -5rem; }
   @media only screen and (min-width: 650px) {
     .scissors {
-      box-shadow: 0 0 0 2rem #eca922, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #d18c0a; } }
+      box-shadow: 0 0 0 2rem #eca922, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #d18c0a; } }
 
 .rock {
-  box-shadow: 0 0 0 2rem #dd405d, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #c72946;
+  box-shadow: 0 0 0 1rem #dd405d, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 1rem #c72946;
   bottom: -3rem;
   left: 4.5rem; }
   @media only screen and (min-width: 650px) {
     .rock {
       left: 7rem;
-      box-shadow: 0 0 0 2rem #dd405d, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #c72946; } }
+      box-shadow: 0 0 0 2rem #dd405d, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1rem 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #c72946; } }
 
 .player .option,
 .house .option {
   width: 10rem;
-  height: 10rem;
-  box-shadow: 0 0 0 1rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 5px 0 1rem #3b55d8; }
+  height: 10rem; }
   @media only screen and (min-width: 650px) {
     .player .option,
     .house .option {
       width: 15rem;
-      height: 15rem;
-      box-shadow: 0 0 0 2rem #5671f5, inset 0 7px 2px 0 rgba(0, 0, 0, 0.2), inset 0 10px 2px 0 rgba(0, 0, 0, 0), 0 1rem 0 2rem #3b55d8; } }
+      height: 15rem; } }
 
 .triangle-img {
   width: 100%;

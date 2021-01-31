@@ -15,6 +15,7 @@ body {
   background-image: $radial-gradient;
   box-sizing: border-box;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {

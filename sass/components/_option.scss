@@ -10,6 +10,10 @@
   width: $option-min;
   height: $option-min;
 
+  & > img {
+    pointer-events: none;
+  }
+
   @include respond(bigger-screen) {
     width: $option-max;
     height: $option-max;
@@ -26,7 +30,7 @@
   }
 }
 .paper {
-  box-shadow: color($paper-1, $paper-2, 2rem);
+  box-shadow: color($paper-1, $paper-2, 1rem);
   top: -5rem;
   left: -5rem;
 
@@ -35,7 +39,7 @@
   }
 }
 .scissors {
-  box-shadow: color($scissors-1, $scissors-2, 2rem);
+  box-shadow: color($scissors-1, $scissors-2, 1rem);
   top: -5rem;
   right: -5rem;
 
@@ -44,7 +48,7 @@
   }
 }
 .rock {
-  box-shadow: color($rock-1, $rock-2, 2rem);
+  box-shadow: color($rock-1, $rock-2, 1rem);
   bottom: -3rem;
   left: 4.5rem;
 
@@ -59,11 +63,10 @@
   .option {
     width: $option-min;
     height: $option-min;
-    box-shadow: color($paper-1, $paper-2, 1rem, 5px);
+
     @include respond(bigger-screen) {
       width: $option-max;
       height: $option-max;
-      box-shadow: color($paper-1, $paper-2, 2rem);
     }
   }
 }
