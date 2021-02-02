@@ -36,7 +36,7 @@ const game = () => {
   // modal functionality
   function modalFuncs() {
     const rulesBtn = document.querySelector('.rules');
-    const close = document.querySelector('.modal__btn');
+    const close = document.querySelector('.modal__close');
     const modal = document.querySelector('.modal');
     const content = document.querySelector('.container');
 
@@ -46,7 +46,7 @@ const game = () => {
     });
 
     close.addEventListener('click', e => {
-      e.stopImmediatePropagation();
+      // e.stopImmediatePropagation();
       modal.classList.remove('show');
       content.classList.remove('blurred');
     });

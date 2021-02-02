@@ -6,6 +6,7 @@
   margin: 0 -4rem;
   height: 42.5rem;
   position: relative;
+  pointer-events: none;
 
   @include respond(bigger-screen) {
     top: 5rem;

@@ -86,6 +86,7 @@
     background-color: white;
     color: $dark-text;
     padding: 1rem 5rem;
+    pointer-events: all;
 
     &:hover {
       color: red;
